@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎁 Secret Birthday App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 🔐 Login Screen -->
+  <div id="login-screen" class="container">
+    <h1>Enter the Secret Code 🔐</h1>
+    <input type="password" id="passcode" placeholder="Enter Passcode">
+    <button onclick="checkPasscode()">Unlock</button>
+    <p id="error-message" class="error"></p>
+  </div>
+
+  <!-- 🎵 Music App (Hidden by default) -->
+  <div id="app-screen" class="container" style="display:none;">
+    <h1>Happy Birthday, Rockstar 🎤</h1>
+    <img src="assets/her_photo.jpg" alt="Sister Photo" class="profile-img">
+    <h2>[Her Name]</h2>
+    <button onclick="playSong()">▶️ Play Your Fav Song</button>
+    <p class="message">Wishing you lots of success, smiles & songs! 🎶</p>
+    <audio id="song" src="assets/favorite_song.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
